@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="comp5703.sydney.edu.au.comp5703_tracker_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Home.KidHomePage.ShowClickChildInfo"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Home.ParentHomePage.ShowUserInfo"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Home.ModifyChildAndParentInfo"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Home.ParentHomePage.ParentAddKidAndParent"
+            android:exported="true" />
+
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Home.CreatorHomePage.AddParentAndKids"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Home.ParentHomePage.InvitedParentActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Home.KidHomePage.InvitedChildActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Home.CreatorHomePage.ShowClickUserInfo"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Person.Logout_sample"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Person.ChildActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Person.ChildActivityList"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Person.ChildRewardList"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.setting.SettingAddTaskActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.setting.SettingAddGoalActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.setting.SettingViewGoalActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.setting.SettingEditGoalActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.setting.SettingChildrenGoalActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.setting.SettingEditTaskActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Home.CreatorHomePage.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.setting.SettingMainActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.setting.SettingParentToChildActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.setting.SettingChildrenActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Notify.NotifyActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Person.ParentsActivity"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Person.Repassoword"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Person.QRParents"
+            android:exported="true" />
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Person.EditActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.Person.ParentsActivity" />
+        </activity>
+
+        <activity
+            android:name="comp5703.sydney.edu.au.comp5703_tracker_app.Pages.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

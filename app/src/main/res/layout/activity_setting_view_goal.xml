@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#60CAFA"
+        app:itemIconTint="#ffff"
+        app:itemTextColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+    <Button
+        android:id="@+id/buttonAddGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_circle_corner"
+        android:backgroundTint="#00688B"
+        android:text="Add"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttom_navigation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_dark_circle"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/ownerName"
+        android:layout_width="141dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGoalList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGoalList" />
+
+    <TextView
+        android:id="@+id/textViewGoalList"
+        android:layout_width="110dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="  Goal List "
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/goalList"
+        android:layout_width="351dp"
+        android:layout_height="435dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="30dp"
+        android:divider="#004F94CD"
+        android:dividerHeight="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddGoal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ownerName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

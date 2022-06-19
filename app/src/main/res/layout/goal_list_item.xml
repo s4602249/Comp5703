@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/goalListItemImage"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/target" />
+
+        <TextView
+            android:id="@+id/goalListItemTitle"
+            android:layout_width="201dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:text="Goal Title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/goalListItemImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/goalListItemPts"
+            android:layout_width="56dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="19dp"
+            android:text="pts"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settingBtnGoalList"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/goalListItemComment"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.509" />
+
+        <ImageView
+            android:id="@+id/settingBtnGoalList"
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/zxing_custom_viewfinder_laser"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+        <TextView
+            android:id="@+id/goalListItemComment"
+            android:layout_width="211dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="5dp"
+            android:text="Comment"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/goalListItemImage"
+            app:layout_constraintTop_toBottomOf="@+id/goalListItemTitle" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSettingGoal"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="260dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="@+id/goalListItemImage"
+            app:layout_constraintTop_toBottomOf="@+id/goalListItemImage" />
+
+        <TextView
+            android:id="@+id/goalProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            android:text="percentage"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/progressBarSettingGoal"
+            app:layout_constraintTop_toTopOf="@+id/progressBarSettingGoal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

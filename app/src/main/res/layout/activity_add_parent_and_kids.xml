@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btm"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.Home.ParentHomePage.ParentAddKidAndParent">
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dark_circle"
+        android:backgroundTint="#00688B"
+        android:text="Save"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821" />
+
+    <EditText
+        android:id="@+id/DOB_input"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_dark_circle"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Select Date of Birth"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688" />
+
+    <EditText
+        android:id="@+id/Phone_input"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_dark_circle"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginRight="20dp"
+        android:layout_width="280dp"
+        android:layout_height="119dp"
+        android:checkedButton="@+id/ParentButton"
+        android:orientation='horizontal'
+        app:layout_constraintBottom_toTopOf="@+id/buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135">
+
+        <RadioButton
+            android:id="@+id/ParentButton"
+            android:layout_marginEnd="10dp"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="@drawable/btn_circle_corner"
+            android:fontFamily="@font/candal"
+            android:gravity="top"
+            android:minHeight="48dp"
+            android:text="Parent"
+            android:textColor="#00688B"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/ChildButton"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_dark_circle"
+            android:fontFamily="@font/candal"
+            android:gravity="top"
+            android:minHeight="48dp"
+            android:text="Child"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#60CAFA"
+        app:itemIconTint="#ffff"
+        app:itemTextColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu"
+
+        />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="78dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Add Family Members"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/familyNameInput"
+        android:layout_width="179dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_dark_circle"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toTopOf="@+id/buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="New member's name"
+        android:textColor="#00688B"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageView
+        android:layout_width="102dp"
+        android:layout_height="62dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/parents" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="102dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189"
+        app:srcCompat="@drawable/kids_adding" />
+
+    <ImageButton
+        android:id="@+id/btn_pick_date"
+        android:layout_width="67dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#004F94CD"
+        android:minHeight="48dp"
+        android:scrollbarSize="20dp"
+        android:src="@drawable/ic_baseline_calendar_month_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693"
+        app:tint="#00688B"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="165dp"
+        android:layout_height="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Phone Number"
+        android:textColor="#00688B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Date of birth"
+        android:textColor="#00688B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

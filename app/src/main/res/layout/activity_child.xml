@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currentScore"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#60CAFA"
+        app:itemIconTint="#ffff"
+        app:itemTextColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu" />
+
+    <!--
+    <ImageView
+        android:id="@+id/childPhoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/child" />
+        -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/childPhoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/child"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <!--
+    <TextView
+        android:id="@+id/childNameShow"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintTop_toBottomOf="@+id/childPhoto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+        -->
+
+    <!--
+    <Button
+        android:id="@+id/childShow"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:background="@drawable/child_button"
+        android:text="Child"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintTop_toBottomOf="@+id/childNameShow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+        -->
+
+    <!--
+    <TextView
+        android:id="@+id/controlLevel"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/childPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/childNameShow" />
+        -->
+
+    <!--
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Your Record"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+        -->
+
+    <!--
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" >
+
+        <ImageView
+            android:id="@+id/achievement"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/achievement" />
+
+        <TextView
+            android:id="@+id/achievementText"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Achievement"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/childCurrentScore1"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:autoSizeTextType="uniform"
+                android:textColor="#696969"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="scores"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+    -->
+
+    <TextView
+        android:id="@+id/childNameShow"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circular_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <TextView
+        android:id="@+id/childCurrentScore"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#00688B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347" />
+
+    <!--
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515">
+
+        <ImageView
+            android:id="@+id/milestone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/achievement" />
+
+        <TextView
+            android:id="@+id/milestoneText"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Milestone"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="#F5F5F5"
+            android:gravity="right">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/milestoneList"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/milestone_model" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615">
+
+        <ImageView
+            android:id="@+id/biggestGift"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/gift" />
+
+        <TextView
+            android:id="@+id/biggestGiftText"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Biggest Available Gift"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/reward"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+    <!--
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:indeterminateOnly="false"
+        android:progress="30"
+        android:progressDrawable="@drawable/circular_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/childCurrentScore"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFA500"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+        -->
+
+    <!--
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715">
+
+        <ImageView
+            android:id="@+id/giftNumber"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/gift" />
+
+        <TextView
+            android:id="@+id/giftGotText"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Gift Got"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/giftGot"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="right">
+
+
+            <Button
+                android:id="@+id/rewardList"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/child_button"
+                android:gravity="center"
+                android:text="Reward List"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815">
+
+        <ImageView
+            android:id="@+id/lastTask"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/task" />
+
+        <TextView
+            android:id="@+id/lastTaskText"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Latest Completed Task"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/lastScore"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/lastActivityName"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+
+    <!--
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515">
+
+        <ImageView
+            android:id="@+id/milestone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/achievement" />
+
+        <TextView
+            android:id="@+id/milestoneText"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Milestone"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="#F5F5F5"
+            android:gravity="right">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/milestoneList"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/milestone_model" />
+        </LinearLayout>
+    </LinearLayout>
+    -->
+
+    <!--
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915">
+
+        <ImageView
+            android:id="@+id/taskNumber"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/task" />
+
+        <TextView
+            android:id="@+id/taskCompletedText"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Task Completed"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/taskCompleted"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/showAll"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/child_button"
+                android:text="Show All"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+
+    <TextView
+        android:id="@+id/biggestGift"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Biggest Available Gift"
+        android:textColor="#00688B"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <TextView
+        android:id="@+id/milestone"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Milestone"
+        android:textColor="#00688B"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:background="@drawable/btn_dark_thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744">
+
+        <ImageView
+            android:id="@+id/celebrate"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/celebrationicon" />
+
+        <TextView
+            android:id="@+id/reward"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#00688B"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/milestoneList"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rewardList"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@drawable/child_button"
+        android:gravity="center"
+        android:text="Goal Exchanged List"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <Button
+        android:id="@+id/showAll"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@drawable/child_button"
+        android:gravity="center"
+        android:text="Completed Task List"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

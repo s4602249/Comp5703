@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "655909940063",
+    "firebase_url": "https://comp5703-776fd-default-rtdb.firebaseio.com",
+    "project_id": "comp5703-776fd",
+    "storage_bucket": "comp5703-776fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655909940063:android:cc7d7ddc5b6f11345aa4ea",
+        "android_client_info": {
+          "package_name": "comp5216.sydney.edu.au.comp5703_tracker_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655909940063-6npaos36l4f9mlicao1lrv5t9uu9o939.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD5M8zjMFKv2XG0VdfyveNpn5louGuu4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655909940063-2ip6u1hs660n80rsrp2qbe55glcd3agh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655909940063:android:780445ff3c709deb5aa4ea",
+        "android_client_info": {
+          "package_name": "comp5216.sydney.edu.au.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655909940063-6npaos36l4f9mlicao1lrv5t9uu9o939.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD5M8zjMFKv2XG0VdfyveNpn5louGuu4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655909940063-2ip6u1hs660n80rsrp2qbe55glcd3agh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+[33m104fa82[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: pull: Fast-forward
+[33m1483b26[m HEAD@{1}: commit (merge): listview updated
+[33m1c65310[m HEAD@{2}: commit: update listview, info display, btn moveable
+[33mee94f64[m HEAD@{3}: commit: modify listview and viewlistener
+[33m5a1735c[m HEAD@{4}: pull: Fast-forward
+[33mb4d280f[m HEAD@{5}: reset: moving to HEAD
+[33mb4d280f[m HEAD@{6}: pull: Fast-forward
+[33m6f13774[m HEAD@{7}: pull: Fast-forward
+[33m05108f3[m HEAD@{8}: commit: show user name in differernt page
+[33m87d3c5f[m HEAD@{9}: pull: Fast-forward
+[33mfff381b[m HEAD@{10}: commit: delete ID in listview and no repeated username in the group
+[33ma9c5992[m HEAD@{11}: pull: Fast-forward
+[33m91f2225[m HEAD@{12}: reset: moving to HEAD^
+[33m7d0d2b0[m HEAD@{13}: reset: moving to HEAD
+[33m7d0d2b0[m HEAD@{14}: pull: Fast-forward
+[33m22703ee[m HEAD@{15}: reset: moving to HEAD
+[33m22703ee[m HEAD@{16}: commit: parent can add another user
+[33mde11394[m HEAD@{17}: pull: Fast-forward
+[33mded9c75[m HEAD@{18}: pull: Fast-forward
+[33m6f8f6b9[m HEAD@{19}: commit: add delete function in parent main page
+[33mb593945[m HEAD@{20}: pull: Fast-forward
+[33m8b64981[m HEAD@{21}: reset: moving to HEAD
+[33m8b64981[m HEAD@{22}: commit: add parent main page content
+[33m8e59d98[m HEAD@{23}: pull: Fast-forward
+[33m6d68240[m HEAD@{24}: reset: moving to HEAD
+[33m6d68240[m HEAD@{25}: pull: Fast-forward
+[33mf6e9252[m HEAD@{26}: pull: Fast-forward
+[33m008d493[m HEAD@{27}: reset: moving to HEAD
+[33m008d493[m HEAD@{28}: pull: Fast-forward
+[33mdafc5cb[m HEAD@{29}: reset: moving to HEAD
+[33mdafc5cb[m HEAD@{30}: pull: Fast-forward
+[33m7e913e8[m HEAD@{31}: pull: Fast-forward
+[33meb2affe[m HEAD@{32}: pull: Fast-forward
+[33m5709c1e[m HEAD@{33}: pull: Fast-forward
+[33mcb70cf7[m HEAD@{34}: commit: add creator information && merge conflict
+[33m7161d28[m HEAD@{35}: pull: Fast-forward
+[33ma18acdf[m HEAD@{36}: reset: moving to HEAD
+[33ma18acdf[m HEAD@{37}: commit: add sessnion manager
+[33mdc0eaa1[m HEAD@{38}: pull: Fast-forward
+[33ma7b3fbe[m HEAD@{39}: pull: Fast-forward
+[33m9ed43ab[m HEAD@{40}: reset: moving to HEAD
+[33m9ed43ab[m HEAD@{41}: pull: Fast-forward
+[33m5396a00[m HEAD@{42}: reset: moving to HEAD
+[33m5396a00[m HEAD@{43}: reset: moving to HEAD
+[33m5396a00[m HEAD@{44}: pull: Fast-forward
+[33m21f21ee[m HEAD@{45}: commit: updated qe code
+[33m5f93ec3[m HEAD@{46}: commit: qr code on the way
+[33m004ae2d[m HEAD@{47}: commit: debug&&finish account delete
+[33m353ef73[m HEAD@{48}: commit: add a thread
+[33m74e65c7[m HEAD@{49}: commit: Add account & qr code & database structure
+[33md7daa62[m HEAD@{50}: commit: splash screen + navigation bar+ re-structure the projecct
+[33mdfbc468[m HEAD@{51}: commit: update gmail login
+[33m734634d[m HEAD@{52}: pull --rebase origin master (finish): returning to refs/heads/master
+[33m734634d[m HEAD@{53}: pull --rebase origin master (pick): login logout register
+[33m04c73d2[m HEAD@{54}: pull --rebase origin master (start): checkout 04c73d20c957112138a617a0a5d29151fb1b1948
+[33m5f94f99[m HEAD@{55}: commit (initial): login logout register

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/child_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="25dp">
+
+
+        <ImageButton
+            android:id="@+id/childbutton"
+            android:layout_width="58dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:background="@drawable/child"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/child_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:text="Child num"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/childbutton"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="188dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Score"
+        android:visibility="visible"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="@+id/child_info" />
+
+
+</androidx.cardview.widget.CardView>
